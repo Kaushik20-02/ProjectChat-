@@ -20,8 +20,8 @@ export default async function RootLayout({
           {!session ?(
             <Login/>
           ):(
-          <div className=" bg-[#444c5c]">
-            <div className="bg-[#5b626f] rounded-b-2xl">
+          <div className=" bg-[#f7f5ff] dark:bg-[#444c5c] ">
+            <div className="bg-[#ccc8dd] dark:bg-[#5b626f] rounded-b-2xl">
               <TopBar/>
             </div>
 

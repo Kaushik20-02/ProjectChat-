@@ -8,7 +8,8 @@ const Login = () => {
     <div className=' bg-[#2faca6e8] h-screen flex
     flex-col items-center text-center justify-center'>
 
-      <Image className='rounded-lg' src="https://play-lh.googleusercontent.com/2QXCv40cUDNEeZqviEJGdITx6tVEYScVi4tFWaJY4ckLei2ggsIxVZPLqAj1IITIlZh9"
+      <Image className='rounded-lg transition
+        duration-300 ease-in-out' src="https://play-lh.googleusercontent.com/2QXCv40cUDNEeZqviEJGdITx6tVEYScVi4tFWaJY4ckLei2ggsIxVZPLqAj1IITIlZh9"
        width={300} height={300} alt='logo'/>
 
        <button onClick={()=> signIn('google')} 
