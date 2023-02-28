@@ -7,7 +7,7 @@ const Appp=()=> {
     const [response, setResponse]= useState(null)
 
     const handleClick= async()=>{
-      await axios.post('http://localhost:8000/chat',
+      await axios.post('https://server-zeta-ivory.vercel.app',
       {prompt}).then((res)=>{
         setResponse(res.data)
       })
