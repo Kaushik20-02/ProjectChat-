@@ -6,6 +6,7 @@ import useTheme from '../components/useTheme'
 
 const TopBar = () => {
   const {data: session }= useSession()
+  
   //dark mode
   const[nextTheme,setTheme] = useTheme()
 
@@ -17,7 +18,7 @@ const TopBar = () => {
        text-slate-600 dark:text-green-300"> chatGPT</span></h1>
 
     <div className="flex items-center justify-center gap-8 font-bold">
-      {session && <img onClick={()=> signOut()}
+    {session && <img onClick={()=> signOut()}
        src={session.user?.image!}
       alt='Profile' className="w-12 h-12 rounded-full
       m-2 hover:scale-90 cursor-pointer"/>}
