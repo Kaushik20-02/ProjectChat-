@@ -21,7 +21,7 @@ const Appp=()=> {
         
       {response &&(
         <div className="flex items-center justify-center gap-4
-        w-full h-full px-8 py-8 bg-slate-200 shadow-lg  dark:bg-slate-500 rounded-[2rem] shadow-lg ">
+        w-full h-full px-8 py-8 bg-slate-200 dark:bg-slate-500 rounded-[2rem] shadow-lg ">
         <p className="w-full h-full 
         font-bold text-xl animate-pulse">{response}</p>
         </div>
