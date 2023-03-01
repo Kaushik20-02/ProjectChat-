@@ -9,7 +9,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "Appp.tsx"
+        "dest": "layout.tsx"
       }
     ]
   }
