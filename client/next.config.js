@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  target: 'static',
-  ssr: 'false',
-  generate:{
-    fallback: true,
-  },
   reactStrictMode: true,
   swcMinify: true,
   experimental:{
