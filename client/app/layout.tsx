@@ -16,6 +16,7 @@ export default async function RootLayout({
     <html>
       <head />
       <body>
+        <SessionProvider session={session}>
           {!session ?(
             <Login/>
           ):(
@@ -27,6 +28,7 @@ export default async function RootLayout({
             <div>{children}</div>
           </div>
           )}
+        </SessionProvider>
       </body>
     </html>
   )
