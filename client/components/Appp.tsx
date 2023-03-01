@@ -6,13 +6,7 @@ const Appp=()=> {
     const [prompt, setPrompt]= useState('')
     const [response, setResponse]= useState(null)
 
-    const handleClick= async()=>{
-      await axios.post('https://server-zeta-ivory.vercel.app',
-      {prompt}).then((res)=>{
-        setResponse(res.data)
-      })
-      .catch((err)=>console.log(err))
-    }
+    
 
   return (
     <div className="flex items-center justify-center h-screen">
