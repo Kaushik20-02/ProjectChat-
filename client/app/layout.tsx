@@ -3,6 +3,7 @@ import TopBar from "../components/TopBar"
 import { getServerSession } from "next-auth"
 import {authOptions} from '../pages/api/auth/[...nextauth]'
 import Login from "../components/Login"
+import { Session } from 'next-auth';
 
 export default async function RootLayout({
   children,
@@ -27,6 +28,7 @@ export default async function RootLayout({
 
             <div>{children}</div>
           </div>
+          
           )}
         </SessionProvider>
       </body>
