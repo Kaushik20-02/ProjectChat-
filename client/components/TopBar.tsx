@@ -24,8 +24,8 @@ const TopBar = () => {
       m-2 hover:scale-90 cursor-pointer"/>}
 
     <div className='dark:text-slate-200'
-         onClick={()=> setTheme(nextTheme)}>
-          <RiMoonFoggyLine className='cursor-pointer w-6 h-6'/></div>
+         >
+          <RiMoonFoggyLine /></div>
       </div>
     </div>
 
