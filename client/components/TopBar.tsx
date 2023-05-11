@@ -3,6 +3,7 @@
 import { useSession, signOut } from "next-auth/react"
 import { RiMoonFoggyLine } from 'react-icons/ri';
 import useTheme from '../components/useTheme'
+import Image from "next/image";
 
 const TopBar = () => {
   const {data: session }= useSession()
@@ -18,15 +19,15 @@ const TopBar = () => {
        text-slate-600 dark:text-green-300"> chatGPT</span></h1>
 
     <div className="flex items-center justify-center gap-8 font-bold">
-    {session && <img onClick={()=> signOut()}
+    {session && <Image onClick={()=> signOut()}
        src={session.user?.image!}
       alt='Profile' className="w-12 h-12 rounded-full
       m-2 hover:scale-90 cursor-pointer"/>}
 
-    <div className='dark:text-slate-200'
-         >
-          <RiMoonFoggyLine /></div>
-      </div>
+   {/* <div className='dark:text-slate-200'
+         onClick={()=> setTheme(nextTheme)}>
+          <RiMoonFoggyLine className='cursor-pointer w-6 h-6'/></div>
+ */} </div>
     </div>
 
   )
