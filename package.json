@@ -27,5 +27,17 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
     "typescript": "4.9.5"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaushik20-02/chatGPT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaushik20-02/chatGPT/issues"
+  },
+  "homepage": "https://github.com/Kaushik20-02/chatGPT#readme"
 }
