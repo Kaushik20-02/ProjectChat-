@@ -1,7 +1,6 @@
 'use client'
 
 import { useSession, signOut } from "next-auth/react"
-import { RiMoonFoggyLine } from 'react-icons/ri';
 import useTheme from '../components/useTheme'
 import Image from "next/image";
 
